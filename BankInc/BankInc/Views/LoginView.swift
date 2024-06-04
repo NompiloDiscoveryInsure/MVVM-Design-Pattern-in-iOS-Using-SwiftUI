@@ -5,10 +5,22 @@ struct LoginView: View {
     @State private var username = ""
     @State private var password = ""
     @State private var isLoggedIn = false
+    @State private var showRegistration = false
+    @State private var isRegistrationSuccessful = false
+
+    private var isFormValid: Bool {
+        !username.isEmpty && !password.isEmpty
+    }
 
     var body: some View {
         NavigationStack {
             VStack {
+                Image("login")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300, height: 300)
+                    .padding(.bottom, 20)
+
                 TextField("Username", text: $username)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
@@ -18,9 +30,11 @@ struct LoginView: View {
                     .padding()
 
                 Button(action: {
-                    userViewModel.login(username: username, password: password)
-                    if userViewModel.user != nil {
-                        isLoggedIn = true
+                    if isFormValid {
+                        userViewModel.login(username: username, password: password)
+                        if userViewModel.user != nil {
+                            isLoggedIn = true
+                        }
                     }
                 }) {
                     Text("Login")
@@ -28,15 +42,37 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .padding()
                         .frame(width: 200, height: 50)
-                        .background(Color.blue)
+                        .background(isFormValid ? Color.purple : Color.gray)
                         .cornerRadius(10)
+                }
+                .disabled(!isFormValid)
+                .padding()
+
+                Button(action: {
+                    showRegistration = true
+                }) {
+                    Text("Register")
+                        .font(.headline)
+                        .foregroundColor(.purple)
+                        .padding()
+                        .frame(width: 200, height: 50)
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.purple, lineWidth: 2)
+                        )
                 }
                 .padding()
             }
-            .navigationTitle("Login")
+            .background(Color(UIColor.clear).ignoresSafeArea())
             .navigationDestination(isPresented: $isLoggedIn) {
-                BankDashboardView(userViewModel: userViewModel).environmentObject(userViewModel)
+                BankDashboardView(userViewModel: userViewModel)
             }
+            .sheet(isPresented: $showRegistration) {
+                RegistrationView(userViewModel: userViewModel, isRegistrationSuccessful: $isRegistrationSuccessful)
+            }
+
         }
     }
 }

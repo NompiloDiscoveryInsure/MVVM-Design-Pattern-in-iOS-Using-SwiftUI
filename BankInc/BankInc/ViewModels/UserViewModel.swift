@@ -1,42 +1,20 @@
 import Foundation
-import CoreData
 
 class UserViewModel: ObservableObject {
     @Published var user: User?
-    private let context = PersistenceController.shared.container.viewContext
+    @Published var isNewAccountCreated = false
 
     func login(username: String, password: String) {
-        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "username == %@ AND password == %@", username, password)
-
-        do {
-            let users = try context.fetch(fetchRequest)
-            if let user = users.first {
-                self.user = user
-            } else {
-                // Create a new user if not found
-                createUser(username: username, password: password)
-            }
-        } catch {
-            print("Login error: \(error.localizedDescription)")
+        if let user = UserService.shared.login(username: username, password: password) {
+            self.user = user
+        } else {
+            self.user = createUser(username: username, password: password)
         }
     }
 
-    private func createUser(username: String, password: String) {
-        let newUser = User(context: context)
-        newUser.id = UUID()
-        newUser.username = username
-        newUser.password = password
-
-        saveContext()
+    func createUser(username: String, password: String) -> User {
+        let newUser = UserService.shared.createUser(username: username, password: password)
         self.user = newUser
-    }
-
-    private func saveContext() {
-        do {
-            try context.save()
-        } catch {
-            print("Error saving context: \(error.localizedDescription)")
-        }
+        return newUser
     }
 }

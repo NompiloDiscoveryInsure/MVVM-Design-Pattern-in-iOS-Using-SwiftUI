@@ -12,19 +12,19 @@
 		8EB671712C0D05E40024FBB5 /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6715E2C0D05E40024FBB5 /* AccountDetailView.swift */; };
 		8EB671722C0D05E40024FBB5 /* BankDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6715F2C0D05E40024FBB5 /* BankDashboardView.swift */; };
 		8EB671732C0D05E40024FBB5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671602C0D05E40024FBB5 /* LoginView.swift */; };
-		8EB671742C0D05E40024FBB5 /* TransactionType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671622C0D05E40024FBB5 /* TransactionType+CoreDataProperties.swift */; };
-		8EB671752C0D05E40024FBB5 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671632C0D05E40024FBB5 /* User+CoreDataProperties.swift */; };
-		8EB671762C0D05E40024FBB5 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671642C0D05E40024FBB5 /* Transaction+CoreDataProperties.swift */; };
-		8EB671772C0D05E40024FBB5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671662C0D05E40024FBB5 /* CoreDataManager.swift */; };
-		8EB671782C0D05E40024FBB5 /* TransactionType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671672C0D05E40024FBB5 /* TransactionType+CoreDataClass.swift */; };
-		8EB671792C0D05E40024FBB5 /* BankAccount+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671682C0D05E40024FBB5 /* BankAccount+CoreDataClass.swift */; };
-		8EB6717A2C0D05E40024FBB5 /* BankAccount+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671692C0D05E40024FBB5 /* BankAccount+CoreDataProperties.swift */; };
-		8EB6717B2C0D05E40024FBB5 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6716A2C0D05E40024FBB5 /* Transaction+CoreDataClass.swift */; };
-		8EB6717C2C0D05E40024FBB5 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6716B2C0D05E40024FBB5 /* User+CoreDataClass.swift */; };
+		8EB671742C0D05E40024FBB5 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671622C0D05E40024FBB5 /* TransactionType.swift */; };
+		8EB671752C0D05E40024FBB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671632C0D05E40024FBB5 /* User.swift */; };
+		8EB671762C0D05E40024FBB5 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671642C0D05E40024FBB5 /* Transaction.swift */; };
 		8EB6717D2C0D05E40024FBB5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6716D2C0D05E40024FBB5 /* UserViewModel.swift */; };
 		8EB6717E2C0D05E40024FBB5 /* BankAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6716E2C0D05E40024FBB5 /* BankAccountViewModel.swift */; };
-		8EB6717F2C0D05E40024FBB5 /* BankModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6716F2C0D05E40024FBB5 /* BankModel.xcdatamodeld */; };
 		8EB671812C0D06100024FBB5 /* BankIncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB671802C0D06100024FBB5 /* BankIncApp.swift */; };
+		8EB6763A2C0DE2960024FBB5 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB676382C0DE2960024FBB5 /* BankAccount.swift */; };
+		8EB6763C2C0DED130024FBB5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6763B2C0DED130024FBB5 /* SplashView.swift */; };
+		8EB6763E2C0DEDDD0024FBB5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6763D2C0DEDDD0024FBB5 /* RegistrationView.swift */; };
+		8EB676402C0E225D0024FBB5 /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6763F2C0E225D0024FBB5 /* AddAccountView.swift */; };
+		8EB676422C0E3D5D0024FBB5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB676412C0E3D5D0024FBB5 /* UserService.swift */; };
+		8EB676442C0E3D890024FBB5 /* BankAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB676432C0E3D890024FBB5 /* BankAccountService.swift */; };
+		8EB676462C0E57220024FBB5 /* AccountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB676452C0E57220024FBB5 /* AccountCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,19 +34,19 @@
 		8EB6715E2C0D05E40024FBB5 /* AccountDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
 		8EB6715F2C0D05E40024FBB5 /* BankDashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankDashboardView.swift; sourceTree = "<group>"; };
 		8EB671602C0D05E40024FBB5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		8EB671622C0D05E40024FBB5 /* TransactionType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransactionType+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8EB671632C0D05E40024FBB5 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8EB671642C0D05E40024FBB5 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8EB671662C0D05E40024FBB5 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		8EB671672C0D05E40024FBB5 /* TransactionType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransactionType+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8EB671682C0D05E40024FBB5 /* BankAccount+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BankAccount+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8EB671692C0D05E40024FBB5 /* BankAccount+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BankAccount+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8EB6716A2C0D05E40024FBB5 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8EB6716B2C0D05E40024FBB5 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8EB671622C0D05E40024FBB5 /* TransactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		8EB671632C0D05E40024FBB5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8EB671642C0D05E40024FBB5 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		8EB6716D2C0D05E40024FBB5 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		8EB6716E2C0D05E40024FBB5 /* BankAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccountViewModel.swift; sourceTree = "<group>"; };
-		8EB671702C0D05E40024FBB5 /* BankModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BankModel.xcdatamodel; sourceTree = "<group>"; };
 		8EB671802C0D06100024FBB5 /* BankIncApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankIncApp.swift; sourceTree = "<group>"; };
+		8EB676382C0DE2960024FBB5 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		8EB6763B2C0DED130024FBB5 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		8EB6763D2C0DEDDD0024FBB5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		8EB6763F2C0E225D0024FBB5 /* AddAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountView.swift; sourceTree = "<group>"; };
+		8EB676412C0E3D5D0024FBB5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8EB676432C0E3D890024FBB5 /* BankAccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountService.swift; sourceTree = "<group>"; };
+		8EB676452C0E57220024FBB5 /* AccountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,6 @@
 		8EB6714E2C0D05720024FBB5 /* BankInc */ = {
 			isa = PBXGroup;
 			children = (
-				8EB6716F2C0D05E40024FBB5 /* BankModel.xcdatamodeld */,
 				8EB671802C0D06100024FBB5 /* BankIncApp.swift */,
 				8EB671612C0D05E40024FBB5 /* Models */,
 				8EB671652C0D05E40024FBB5 /* Respository */,
@@ -105,6 +104,10 @@
 				8EB6715E2C0D05E40024FBB5 /* AccountDetailView.swift */,
 				8EB6715F2C0D05E40024FBB5 /* BankDashboardView.swift */,
 				8EB671602C0D05E40024FBB5 /* LoginView.swift */,
+				8EB6763B2C0DED130024FBB5 /* SplashView.swift */,
+				8EB6763D2C0DEDDD0024FBB5 /* RegistrationView.swift */,
+				8EB6763F2C0E225D0024FBB5 /* AddAccountView.swift */,
+				8EB676452C0E57220024FBB5 /* AccountCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,9 +115,10 @@
 		8EB671612C0D05E40024FBB5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8EB671622C0D05E40024FBB5 /* TransactionType+CoreDataProperties.swift */,
-				8EB671632C0D05E40024FBB5 /* User+CoreDataProperties.swift */,
-				8EB671642C0D05E40024FBB5 /* Transaction+CoreDataProperties.swift */,
+				8EB676382C0DE2960024FBB5 /* BankAccount.swift */,
+				8EB671622C0D05E40024FBB5 /* TransactionType.swift */,
+				8EB671632C0D05E40024FBB5 /* User.swift */,
+				8EB671642C0D05E40024FBB5 /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,12 +126,8 @@
 		8EB671652C0D05E40024FBB5 /* Respository */ = {
 			isa = PBXGroup;
 			children = (
-				8EB671662C0D05E40024FBB5 /* CoreDataManager.swift */,
-				8EB671672C0D05E40024FBB5 /* TransactionType+CoreDataClass.swift */,
-				8EB671682C0D05E40024FBB5 /* BankAccount+CoreDataClass.swift */,
-				8EB671692C0D05E40024FBB5 /* BankAccount+CoreDataProperties.swift */,
-				8EB6716A2C0D05E40024FBB5 /* Transaction+CoreDataClass.swift */,
-				8EB6716B2C0D05E40024FBB5 /* User+CoreDataClass.swift */,
+				8EB676412C0E3D5D0024FBB5 /* UserService.swift */,
+				8EB676432C0E3D890024FBB5 /* BankAccountService.swift */,
 			);
 			path = Respository;
 			sourceTree = "<group>";
@@ -211,21 +211,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB6763A2C0DE2960024FBB5 /* BankAccount.swift in Sources */,
+				8EB6763C2C0DED130024FBB5 /* SplashView.swift in Sources */,
+				8EB676402C0E225D0024FBB5 /* AddAccountView.swift in Sources */,
+				8EB676462C0E57220024FBB5 /* AccountCard.swift in Sources */,
 				8EB671812C0D06100024FBB5 /* BankIncApp.swift in Sources */,
-				8EB671782C0D05E40024FBB5 /* TransactionType+CoreDataClass.swift in Sources */,
-				8EB671762C0D05E40024FBB5 /* Transaction+CoreDataProperties.swift in Sources */,
-				8EB6717C2C0D05E40024FBB5 /* User+CoreDataClass.swift in Sources */,
+				8EB671762C0D05E40024FBB5 /* Transaction.swift in Sources */,
+				8EB6763E2C0DEDDD0024FBB5 /* RegistrationView.swift in Sources */,
 				8EB671722C0D05E40024FBB5 /* BankDashboardView.swift in Sources */,
 				8EB6717D2C0D05E40024FBB5 /* UserViewModel.swift in Sources */,
-				8EB6717B2C0D05E40024FBB5 /* Transaction+CoreDataClass.swift in Sources */,
-				8EB671752C0D05E40024FBB5 /* User+CoreDataProperties.swift in Sources */,
-				8EB671792C0D05E40024FBB5 /* BankAccount+CoreDataClass.swift in Sources */,
-				8EB6717A2C0D05E40024FBB5 /* BankAccount+CoreDataProperties.swift in Sources */,
+				8EB671752C0D05E40024FBB5 /* User.swift in Sources */,
 				8EB671732C0D05E40024FBB5 /* LoginView.swift in Sources */,
-				8EB6717F2C0D05E40024FBB5 /* BankModel.xcdatamodeld in Sources */,
-				8EB671742C0D05E40024FBB5 /* TransactionType+CoreDataProperties.swift in Sources */,
+				8EB671742C0D05E40024FBB5 /* TransactionType.swift in Sources */,
+				8EB676422C0E3D5D0024FBB5 /* UserService.swift in Sources */,
 				8EB6717E2C0D05E40024FBB5 /* BankAccountViewModel.swift in Sources */,
-				8EB671772C0D05E40024FBB5 /* CoreDataManager.swift in Sources */,
+				8EB676442C0E3D890024FBB5 /* BankAccountService.swift in Sources */,
 				8EB671712C0D05E40024FBB5 /* AccountDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BankInc/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -393,6 +394,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BankInc/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -436,19 +438,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8EB6716F2C0D05E40024FBB5 /* BankModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8EB671702C0D05E40024FBB5 /* BankModel.xcdatamodel */,
-			);
-			currentVersion = 8EB671702C0D05E40024FBB5 /* BankModel.xcdatamodel */;
-			path = BankModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8EB671442C0D05720024FBB5 /* Project object */;
 }
